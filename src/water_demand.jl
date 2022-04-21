@@ -40,7 +40,7 @@ function initialize_domestic_demand(nc, config, inds, Δt)
 
     demand_gross = ncread(
         nc,
-        config.input,
+        config,
         "vertical.domestic.demand_gross";
         sel = inds,
         defaults = 0.0,
@@ -48,7 +48,7 @@ function initialize_domestic_demand(nc, config, inds, Δt)
     ).* (Δt / basetimestep)
     demand_net = ncread(
         nc,
-        config.input,
+        config,
         "vertical.domestic.demand_net";
         sel = inds,
         defaults = 0.0,
@@ -68,7 +68,7 @@ function initialize_industry_demand(nc, config, inds, Δt)
 
     demand_gross = ncread(
         nc,
-        config.input,
+        config,
         "vertical.industry.demand_gross";
         sel = inds,
         defaults = 0.0,
@@ -76,7 +76,7 @@ function initialize_industry_demand(nc, config, inds, Δt)
     ).* (Δt / basetimestep)
     demand_net = ncread(
         nc,
-        config.input,
+        config,
         "vertical.industry.demand_net";
         sel = inds,
         defaults = 0.0,
@@ -96,7 +96,7 @@ function initialize_livestock_demand(nc, config, inds, Δt)
 
     demand_gross = ncread(
         nc,
-        config.input,
+        config,
         "vertical.livestock.demand_gross";
         sel = inds,
         defaults = 0.0,
@@ -104,7 +104,7 @@ function initialize_livestock_demand(nc, config, inds, Δt)
     ).* (Δt / basetimestep)
     demand_net = ncread(
         nc,
-        config.input,
+        config,
         "vertical.livestock.demand_net";
         sel = inds,
         defaults = 0.0,
