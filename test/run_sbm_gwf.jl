@@ -15,7 +15,7 @@ flush(model.writer.csv_io)  # ensure the buffer is written fully to disk
 
     @test row.time == DateTime("2000-06-01T00:00:00")
     @test row.Q_av ≈ 0.01620324716944374f0
-    @test row.head ≈ 1.8416896245327632f0
+    @test row.head ≈ 1.844048098862149f0
 end
 
 @testset "first timestep" begin
@@ -25,7 +25,7 @@ end
     @test sbm.θₛ[1] ≈ 0.44999998807907104f0
     @test sbm.runoff[1] == 0.0
     @test sbm.soilevap[1] == 0.0
-    @test sbm.transpiration[1] ≈ 0.6117526566330049f0
+    @test sbm.transpiration[1] ≈ 0.4078351044220031f0
 end
 
 # run the second timestep
@@ -37,7 +37,7 @@ model = Wflow.update(model)
     @test sbm.θₛ[1] ≈ 0.44999998807907104f0
     @test sbm.runoff[1] == 0.0
     @test sbm.soilevap[1] == 0.0
-    @test sbm.transpiration[1] ≈ 1.0122634204681036f0
+    @test sbm.transpiration[1] ≈ 0.6643074006526548f0
 end
 
 @testset "overland flow" begin
