@@ -114,6 +114,11 @@ Rakovec, O., Weerts, A.H., Sumihar, J., Uijlenhoet, R., 2015. Operational aspect
 asynchronous filtering for flood forecasting. Hydrol. Earth Syst. Sci., 19, 2911–2924,
 <https://doi.org/10.5194/hess-19-2911-2015>.
 
+Ratri, D.N., Weerts, A., Muharsyah, R., ...Aldrian, E., Hariadi, M.H., 2023. Calibration 
+of ECMWF SEAS5 based streamflow forecast in Seasonal hydrological forecasting for Citarum 
+river basin, West Java, Indonesia. Journal of Hydrology: Regional Studies, 2023, 45, 101305, 
+<https://doi.org/10.1016/j.ejrh.2022.101305>. 
+
 Rusli,S., A.H. Weerts, A. Taufiq, V. Bense, 2021. Estimating water balance components and
 their uncertainty bounds in highly groundwater-dependent and data-scarce area: An example
 for the Upper Citarum basin, J. Hydrol. Regional Studies,
